@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles2.css" />
+    <title>Pet Giveaway Login</title>
+    <script src="myScript.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <main>
+          <div class="formContainer">
+            <h2>Login</h2>
+            <form
+              id="giveawayLoginForm"
+              method="post"
+              action="/give_away/login"
+            >
+              <label for="username">Username:</label><br />
+              <input type="text" id="username" name="username" /><br /><br />
+
+              <label for="password">Password:</label><br />
+              <input
+                type="password"
+                id="password"
+                name="password"
+              /><br /><br />
+
+              <ul>
+                <li>Username: Must be letters and digits only.</li>
+                <li>
+                  Password: Must be at least 4 characters, must contain letters
+                  and digits only, and at least one of each.
+                </li>
+              </ul>
+              <input type="submit" class="submit" value="Login" />
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
